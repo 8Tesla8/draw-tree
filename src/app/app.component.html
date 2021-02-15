@@ -1,0 +1,13 @@
+
+<router-outlet></router-outlet>
+
+<div>
+  <span class="title"> Floor count:</span>
+  <input [(ngModel)]="countFloor" type="number">
+  <button (click)="Draw()">Draw</button>
+</div>
+
+<div>
+  <div *ngFor="let str of tree" [innerHTML]="str"> </div>
+</div>
+
